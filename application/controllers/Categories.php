@@ -22,7 +22,8 @@
 				$this->category_model->create_category();
 				// Set message
 				redirect('categories');
-      }
+			}
+			
 		}
 		
 		public function posts($id){
