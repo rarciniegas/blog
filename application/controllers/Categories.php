@@ -10,6 +10,10 @@
 		}
    
     public function create(){
+			// Check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
 
 			
 			$data['title'] = 'Create Category';

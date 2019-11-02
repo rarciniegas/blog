@@ -26,6 +26,7 @@
 			$data['slug'] = $slug;
       $data['body'] = $this->input->post('body');
       $data['category_id'] = $this->input->post('category_id');
+      $data['user_id'] = $this->session->userdata('user_id');
       $data['image'] = $imgdata;
       
 
